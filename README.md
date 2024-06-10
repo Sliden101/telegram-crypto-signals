@@ -16,11 +16,11 @@ The commands listed below are intended to be run in a terminal.
 
 1. Create a config.yml file and put it into "app" folder.
 
-1. Build your own image, for example `docker build -t laliux/telegram-crypto-signals:latest .`
+1. Build your own image, for example `docker build -t sliden/telegram-crypto-signals:latest .`
 
-1. For testing and debugging run `docker run --rm -ti -v  $PWD/app:/app laliux/telegram-crypto-signals:latest`
+1. For testing and debugging run `docker run --rm -ti -v  $PWD/app:/app sliden/telegram-crypto-signals:latest`
 
-1. For production run in daemon mode `docker run --rm -di -v  $PWD/app:/app laliux/telegram-crypto-signals:latest`
+1. For production run in daemon mode `docker run --rm -di -v  $PWD/app:/app sliden/telegram-crypto-signals:latest`
 
 ## Interacting with Telegram Bot
 From your chat bot you can use the following commands. The most important is "/timeout" to set the update interval. Value is given in seconds.
