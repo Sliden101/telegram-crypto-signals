@@ -158,7 +158,7 @@ def alarm(bot, job):
     _market_data = users_market_data[user_id]
     _config = users_config[user_id]
         
-    _notifier = Notifier(_config.notifiers, _market_data)
+    _notifier = Notifier(_config.notifiers, _market_data, _config.settings['enable_charts'])
     _notifier.telegram_client.set_updater(updater)
     
 
@@ -228,7 +228,7 @@ def chart(bot, update, args):
     
     _market_data = users_market_data[user_id]
     _config = users_config[user_id]
-    _notifier = Notifier(_config.notifiers, _market_data)
+    _notifier = Notifier(_config.notifiers, _market_data, _config.settings['enable_charts'])
     _notifier.telegram_client.set_updater(updater)    
     
     logger.info('Processing command for chat_id %s' % str(chat_id))

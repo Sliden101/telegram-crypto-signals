@@ -19,7 +19,7 @@ class Notifier():
     """Handles sending notifications via the configured notifiers
     """
 
-    def __init__(self, notifier_config, market_data): #, user_id):
+    def __init__(self, notifier_config, market_data, enable_charts): #, user_id):
         """Initializes Notifier class
 
         Args:
@@ -29,6 +29,7 @@ class Notifier():
         self.logger = structlog.get_logger()
         self.notifier_config = notifier_config
         self.market_data = market_data
+        self.enable_charts = enable_charts
         #self.user_id = user_id
         self.last_analysis = dict()
 
