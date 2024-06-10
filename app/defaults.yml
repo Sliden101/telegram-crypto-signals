@@ -10,7 +10,7 @@ settings:
   market_pairs: null
   enable_charts: true
   timezone: UTC
-  
+
 exchanges:
   binance:
       required:
