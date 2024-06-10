@@ -10,10 +10,11 @@ settings:
   market_pairs: null
   enable_charts: true
   timezone: UTC
-
-binance:
-    required:
-        enabled: true
+  
+exchanges:
+  binance:
+      required:
+          enabled: true
 notifiers:
   twilio:
     required:
