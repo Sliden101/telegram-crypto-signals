@@ -19,6 +19,7 @@ WORKDIR /app
 # Pip doesn't install requirements sequentially.
 # To ensure pre-reqs are installed in the correct
 # order they have been split into two files
+RUN pip install --upgrade pip
 RUN pip install -r requirements-step-1.txt
 RUN pip install -r requirements-step-2.txt
 
