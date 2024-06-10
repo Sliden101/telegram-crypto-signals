@@ -110,6 +110,7 @@ def start(bot, update):
     
     chat_id = update.message.chat_id
     user_id = 'usr_{}'.format(chat_id)
+    print(chat_id)
     
     logger.info('Starting chat with id: %s' % chat_id)
     
@@ -132,7 +133,7 @@ def start(bot, update):
     if user_id not in users_market_data:
         users_market_data[user_id] = copy.deepcopy(market_data)
         
-    update.message.reply_text('Hi! Welcome to Crypto Signals Bot')
+    update.message.reply_text("Hi! Welcome to Sliden's Signals Bot")
     update.message.reply_text('Dont forget to set the update interval. Type /help for more info.')
         
 def help(bot, update):
